@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_maps"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_map"
+            android:checkable="true"/>
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="@string/menu_profile"
+            android:checkable="true" />
+        <item
+            android:id="@+id/nav_findFriend"
+            android:icon="@drawable/ic_friends"
+            android:title="@string/menu_findFriend"
+            android:checkable="true" />
+    </group>
+
+</menu>

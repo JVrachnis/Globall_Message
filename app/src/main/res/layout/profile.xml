@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@android:drawable/ic_menu_gallery"
+                    tools:srcCompat="@tools:sample/avatars"
+                    android:contentDescription="@string/todo" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/DisplayName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#CD000000"
+                android:text="@string/display_name" />
+
+            <EditText
+                android:id="@+id/DisplayNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/display_name"
+                android:inputType="text"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#CD000000"
+                android:text="@string/first_name" />
+
+            <EditText
+                android:id="@+id/firstnameEditText"
+                android:hint="@string/fist_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:importantForAutofill="no" />
+            <TextView
+                android:id="@+id/lastname"
+                android:text="@string/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#CD000000"
+                 />
+            <EditText
+                android:id="@+id/lastnameEditText"
+                android:hint="@string/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:importantForAutofill="no" />
+            <TextView
+                android:id="@+id/bday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#CD000000"
+                android:text="@string/birthday" />
+
+            <EditText
+                android:id="@+id/bdayEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="@string/birthday"
+                android:inputType="date"
+                android:importantForAutofill="no" />
+            <TextView
+                android:id="@+id/bio"
+                android:text="@string/bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#CD000000"
+                />
+            <EditText
+                android:id="@+id/bioEditText"
+                android:hint="@string/bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:importantForAutofill="no" />
+            <Button
+                android:id="@+id/addUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save_changes" />
+
+            <Button
+                android:id="@+id/singout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sing_out" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delete_profile" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/friendListTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/friendListTV" />
+
+                <LinearLayout
+                    android:id="@+id/friendList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
